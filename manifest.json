@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "ScreenRecord",
+  "description": "Screen Record Chrome Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "permissions": ["scripting", "identity"],
+  "host_permissions": ["https://unpkg.com/*"],
+  "oauth2": {
+    "client_id": "500231400510-8ip7p0ujd189hsbvjgkf9knfgjm8v66m.apps.googleusercontent.com",
+    "scopes": ["openid", "email", "profile"]
+  }
+}
